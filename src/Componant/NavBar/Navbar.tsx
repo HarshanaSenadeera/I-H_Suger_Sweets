@@ -1,9 +1,13 @@
 // Navbar.js or Navbar.tsx
-import React from 'react';
+import React, {Component} from 'react';
 import '../../popup.css';
 import logo from '../../../src/Images/Capture-removebg-preview (1).png'
+import {Link} from "react-router-dom";
 
-export class Navbar extends React.Component {
+export class Navbar extends Component {
+    handleRefresh = () => {
+        window.location.reload();
+    };
     render() {
         return (
             <div className="p-3 bg-rose-400 flex justify-between items-center"  >
@@ -18,28 +22,28 @@ export class Navbar extends React.Component {
 
                 <ul className="list-none flex mt-1">
                     <li className="mr-2 text-20 font-bold text-white
-                        hover:text-red-600 cursor-pointer
-                        transition duration-1000 ease-in-out
-                        transform transition-transform hover:scale-125 font-mono">
-                        Home
+                                    hover:text-red-600 cursor-pointer
+                                    transition duration-1000 ease-in-out
+                                    transform transition-transform hover:scale-125 font-mono">
+                        <a href="/" onClick={this.handleRefresh}>Home</a>
                     </li>
                     <li className="mr-2 text-20 font-bold text-white
                         hover:text-red-600 cursor-pointer
                         transition duration-1000 ease-in-out
                         transform transition-transform hover:scale-125 font-mono">
-                        Contact
+                        <Link to="/contact">Contact</Link>
                     </li>
                     <li className="mr-2 text-20 font-bold text-white hover:text-red-600 cursor-pointer
                         transition duration-1000 ease-in-out
                         transform transition-transform hover:scale-125 font-mono">
-                        About
+                        <Link to="/about">About</Link>
                     </li>
                 </ul>
 
-                <button className="text-40 h-10 text-[#e6f0e6]
+                <button className="text-40 h-10 text-gray-600
                         bg-white pl-3 pr-3 rounded-md
                         transform transition-transform hover:scale-110
-                        hover:text-tertiary hover:bg-green-600  font-bold">
+                        hover:text-white hover:bg-green-600  font-bold ">
                     Sign In
                 </button>
 
