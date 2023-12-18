@@ -1,0 +1,39 @@
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(+40px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(+40px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+    0% {
+        color: rgb(255, 255, 255); /* Initial color */
+    }
+    50% {
+        color: rgb(255, 255, 255); /* Intermediate color */
+    }
+    100% {
+        color: rgb(255, 255, 255); /* Final color */
+    }
+}
+
+.color-changing-text {
+    animation: colorChange 1s infinite; /* Change '3s' to control the animation duration */
+
+}
+
+.jumping-letters {
+    display: inline-block;
+    animation: jump 5s infinite; /* Adjust the duration and other properties as needed */
+}
+
+
