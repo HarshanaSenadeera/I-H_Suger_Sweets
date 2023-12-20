@@ -26,7 +26,7 @@ export class Navbar extends Component {
                 <ul className="list-none flex mt-1">
                     <li className="flex items-center mr-4 text-3xl font-bold text-white
                                     hover:text-red-600 cursor-pointer
-                                    transition duration-1000 ease-in-out
+                                    transition duration-500 ease-in-out
                                     transform transition-transform hover:scale-125 font-mono">
                         {/* Home Icon */}
                         <img className="w-5 h-5 mr-2" src={iconHome} alt="Home Icon" />
@@ -34,14 +34,14 @@ export class Navbar extends Component {
                     </li>
                     <li className="flex items-center mr-4 text-3xl font-bold text-white
                                     hover:text-red-600 cursor-pointer
-                                    transition duration-1000 ease-in-out
+                                    transition duration-500 ease-in-out
                                     transform transition-transform hover:scale-125 font-mono">
                         {/* Contact Icon */}
                         <img className="w-5 h-5 mr-2" src={iconContact} alt="Contact Icon" />
                         <Link to="/contact">Contact</Link>
                     </li>
                     <li className="flex items-center mr-4 text-3xl font-bold text-white hover:text-red-600 cursor-pointer
-                                    transition duration-1000 ease-in-out
+                                    transition duration-500 ease-in-out
                                     transform transition-transform hover:scale-125 font-mono">
                         {/* About Icon */}
                         <img className="w-10 h-6 mr-2" src={iconAbout} alt="About Icon" />
@@ -53,7 +53,7 @@ export class Navbar extends Component {
                         bg-white pl-3 pr-3 rounded-md
                         transform transition-transform hover:scale-125 font-mono
                         hover:text-white hover:bg-green-600  font-bold ">
-                    Sign In
+                    <Link to="/login">Sign In</Link>
                 </button>
 
             </div>
