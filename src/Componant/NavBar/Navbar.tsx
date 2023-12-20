@@ -13,7 +13,7 @@ export class Navbar extends Component {
     };
     render() {
         return (
-            <div className="p-3 bg-amber-400 flex justify-between items-center"  >
+            <div className="p-3 bg-amber-600 flex justify-between items-center"  >
 
                 {/*<h1 className="text-2xl text-secondary text-white font-bold font-serif">
                     <span className="jumping-letters">I & H Sugar Sweets</span>
