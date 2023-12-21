@@ -18,7 +18,7 @@ export class About extends Component{
                     </div>
 
                     <p className="pb-3 text-[15px]">
-                        <span style={{ fontSize: '30px' ,color: 'red'}}>W</span>elcome to <b>I & H Sugar Sweets</b>, where passion meets <i>sweetness!</i>
+                        <span style={{ fontSize: '40px' ,color: 'red'}}>W</span>elcome to <b>I & H Sugar Sweets</b>, where passion meets <i>sweetness!</i>
                         At <b>I & H Sugar Sweets</b>, we believe that every moment is worth celebrating,
                         and what better way to celebrate than with a delicious slice of cake?<br/>
                         Our journey began with a simple love for baking, and over the years,
@@ -40,9 +40,9 @@ export class About extends Component{
                                    text-amber-600
                                    underline
                                    decoration-2 font-bold"> About Products </h2>
-                    <div className="relative">
-                        <img className="h-40 w-40 ml-1 pt-1 absolute top-0 right-0 " src={cake}
-                             alt=""/>
+                    <div className="relative flex">
+                        {/*<img className="h-40 w-40 ml-1 pt-1 absolute top-0 right-0 " src={cake}
+                             alt=""/>*/}
                     </div>
 
                     <p className="pb-3 text-[15px]">
