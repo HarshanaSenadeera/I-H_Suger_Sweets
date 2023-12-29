@@ -1,8 +1,4 @@
 import React from 'react';
-import {Navbar} from "../Componant/NavBar/Navbar";
-import {Footer} from "../Componant/Footer/Footer";
-import {Comment} from "postcss";
-import {Content} from "../Componant/Content/Content";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {Default} from "../Componant/Default/Default";
 import {Logging} from "../Pages/Logging/Logging";

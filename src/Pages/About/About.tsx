@@ -6,18 +6,15 @@ export class About extends Component{
     render() {
         return (
 
-            <div className="flex-auto">
-                <div className="h-auto pt-5 pl-10 pr-10 ml-auto">
-                    <h2 className="pb-3 text-3xl
-                                   text-amber-600
-                                   underline
-                                   decoration-2 font-bold"> About Us </h2>
+            <div className="flex-auto flex justify-between">
+                <div className="w-1/2 p-8 bg-white rounded-md shadow-md">
+                    <h2 className="text-3xl text-amber-600 underline font-bold mb-4"> About Us </h2>
                     <div className="relative">
                         {/*<img className="h-15 w-20 ml-1 pt-1 absolute top-0 right-0 " src={cake}
                                  alt=""/>*/}
                     </div>
 
-                    <p className="pb-3 text-[15px]">
+                    <p className="text-base text-gray-700">
                         <span style={{ fontSize: '40px' ,color: 'red'}}>W</span>elcome to <b>I & H Sugar Sweets</b>, where passion meets <i>sweetness!</i>
                         At <b>I & H Sugar Sweets</b>, we believe that every moment is worth celebrating,
                         and what better way to celebrate than with a delicious slice of cake?<br/>
@@ -35,17 +32,14 @@ export class About extends Component{
                 </div>
 
 
-                <div className="h-auto pt-5 pl-10 pr-10">
-                    <h2 className="pb-3 text-3xl
-                                   text-amber-600
-                                   underline
-                                   decoration-2 font-bold"> About Products </h2>
+                <div className="w-1/2 p-8 bg-white rounded-md shadow-md">
+                    <h2 className="text-3xl text-amber-600 underline font-bold mb-4"> About Products </h2>
                     <div className="relative flex">
                         {/*<img className="h-40 w-40 ml-1 pt-1 absolute top-0 right-0 " src={cake}
                              alt=""/>*/}
                     </div>
 
-                    <p className="pb-3 text-[15px]">
+                    <p className="text-base text-gray-700">
                         Cake is a yummy treat that we often eat on special days like birthdays or parties.<br/>
                         It is sweet and can have many flavors like <b>chocolate</b>, <b>vanilla</b>, or <b>strawberry</b>.
                         <br/>
